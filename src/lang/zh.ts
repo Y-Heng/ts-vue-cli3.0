@@ -6,6 +6,6 @@ export default {
     demo2: '模块二',
     demo3: '模块三',
     other: '杂项',
-    chart_demo: '图标'
+    chart_demo: '图表'
   }
 }
