@@ -1,0 +1,281 @@
+@import '@/styles/variables.scss';
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: $--color-text;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: #94989d;
+  text-decoration: none;
+}
+
+// 横线
+hr {
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+
+// 字号
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.5em 0;
+  padding: 0;
+}
+
+// 文字定位
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.max-width {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+// float
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.cfix::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+// padding / margin
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.padding-30 {
+  padding: 30px !important;
+}
+
+// 圆角
+.border-radius5 {
+  border-radius: 5px;
+}
+
+// 默认文字颜色-正文
+.text-color {
+  color: $--color-text;
+}
+
+// 加深文字-用于标题等加强类文字
+.text-color-dark {
+  color: $--color-text-dark;
+}
+
+// 减淡文字-用于帮助提示类文字
+.text-color-light {
+  color: $--color-text-light;
+}
+
+.text-color-lighter {
+  color: $--color-text-lighter;
+}
+
+// primary文字
+.text-color-primary {
+  color: $--color-primary;
+}
+
+// success文字
+.text-color-success {
+  color: $--color-success;
+}
+
+// warning文字
+.text-color-warning {
+  color: $--color-warning;
+}
+
+// danger文字
+.text-color-danger {
+  color: $--color-danger;
+}
+
+// info文字
+.text-color-info {
+  color: $--color-info;
+}
+
+// 支付色号
+.text_color_pay {
+  color: #17a77a;
+}
+
+// 红色
+.text-color-red {
+  color: red;
+}
+
+// tips
+.tips {
+  font-size: 12px;
+  color: $--color-text-lighter;
+  line-height: 1.2;
+}
+
+.tips:hover {
+  color: $--color-text-lighter;
+}
+
+.el-upload__tip {
+  color: $--color-text-lighter;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.flex-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// 删除线
+.through {
+  text-decoration: line-through;
+}
+
+// 手型
+.pointer {
+  cursor: pointer;
+}
+
+.cursor-grab {
+  cursor: grab;
+}
+
+// 禁用换行
+.nowrap {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+// 空数据提示
+.empty {
+  padding: 20px;
+  text-align: center;
+  color: #666;
+
+  &:before {
+    content: '';
+    background: url('../assets/empty.png') center;
+    margin: 0 auto;
+    width: 226px;
+    height: 173px;
+    display: block;
+  }
+}
+
+// 测试布局
+.grid-content {
+  border-radius: 4px;
+  min-height: 36px;
+  background-color: #d3dce6;
+}
+
+// html
+.html {
+  * {
+    max-width: 100%;
+    word-break: break-all;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}
