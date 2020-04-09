@@ -10,7 +10,6 @@
 
 <script lang="ts">
 import SearchForm from '@/components/search-form/index.vue'
-import { DiyForm } from '@/components/search-form/interface-data'
 import { handTimeType } from '@/utils/enum'
 import DateSpeed from '@/components/date-speed/index.vue'
 import { Component, Vue } from 'vue-property-decorator'
@@ -35,8 +34,8 @@ export default class DashBoard extends Vue {
         label: '输入框',
         default: '达阿达达',
         other_info: {
-          // placeholder: '哈哈',
-          // type: 'textarea',
+          placeholder: '哈哈',
+          type: 'textarea',
           'max-length': 10,
           'show-word-limit': true
         }
@@ -78,7 +77,7 @@ export default class DashBoard extends Vue {
         label: '日期',
         default: '',
         other_info: {
-          // placeholder: '哈哈哈',
+          placeholder: '哈哈哈',
           'picker-options': {
             start: '08:30',
             step: '00:15',

@@ -13,6 +13,7 @@
     "interface-name": [false],
     "arrow-parens": false,
     "object-literal-sort-keys": false,
+    "object-literal-key-quotes": [true, "as-needed"],
     "semicolon": [true, "never"],
     "no-console": [false, "log", "error"],
     "type-literal-delimiter": false,
