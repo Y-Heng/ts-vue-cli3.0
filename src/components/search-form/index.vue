@@ -17,7 +17,7 @@ export default {
       'el-form',
       {
         props: {
-          'inline': !this.form.is_block,
+          inline: !this.form.is_block,
           'label-width': this.form.label_width || '80px'
         }
       },
