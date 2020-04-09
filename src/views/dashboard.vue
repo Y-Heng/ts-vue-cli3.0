@@ -1,7 +1,7 @@
 <template>
   <div v-minHeight="-80" class="home">
     <div>全局过滤器使用{{ time | fmDate('YYYY-MM-DD HH:mm:ss') }}</div>
-    <br>
+    <br />
     <date-speed v-model="range_time" start-date="2020-04-05 00:00:00" end-date="2020-04-14 23:00:00" ref="date-speed" @run="run" @stop="stop" />
 
     <search-form style="margin-top:20px;" :form="form" />
@@ -25,6 +25,7 @@ export default class DashBoard extends Vue {
   time_out: any = ''
   time_type: handTimeType = handTimeType.hour
 
+  // form 表单配置
   form: DiyForm = {
     title: 'xx',
     is_block: true, // 是否块状

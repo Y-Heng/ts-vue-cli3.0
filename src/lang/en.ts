@@ -5,6 +5,7 @@ export default {
     demo1: 'demo1',
     demo2: 'demo2',
     demo3: 'demo3',
-    other: 'other'
+    other: 'other',
+    chart_demo: 'chart demo'
   }
 }

@@ -82,7 +82,7 @@ export const constantRouterMap = [
     path: '/other',
     name: 'other',
     component: layout_full,
-    redirect: '/other/demo1',
+    redirect: '/other/chart_demo',
     alwaysShow: true,
     meta: {
       title: 'other',
@@ -91,10 +91,10 @@ export const constantRouterMap = [
     children: [
       {
         name: 'other_demo1',
-        path: 'demo1',
-        component: () => import(/* webpackChunkName: "other-demo1" */ '@/views/other/demo1.vue'),
+        path: 'chart_demo',
+        component: () => import(/* webpackChunkName: "other-chart-demo" */ '@/views/other/chart-demo.vue'),
         meta: {
-          title: 'demo1',
+          title: 'chart_demo',
           icon: 'star',
           roles: 888
         }
